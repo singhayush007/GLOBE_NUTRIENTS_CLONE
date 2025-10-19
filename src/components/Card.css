@@ -1,0 +1,50 @@
+/* Horizontal card container */
+.category-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  /* responsive */
+}
+
+/* Single card */
+.card {
+  width: 120px;
+  /* adjust as needed */
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  /* grey background */
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  /* only lift effect if chahiye */
+}
+
+/* Hover effect: grey background remains */
+.card:hover {
+  transform: translateY(-5px);
+  /* optional lift effect */
+  /* box-shadow: none; */
+  /* agar shadow nahi chahiye */
+  background-color: #f5f5f5;
+  /* grey same as normal */
+}
+
+/* Card image */
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Card title */
+.card-title {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  color: #333;
+  /* thoda dark text for contrast */
+}

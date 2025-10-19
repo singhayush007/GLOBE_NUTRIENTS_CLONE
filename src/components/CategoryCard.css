@@ -1,0 +1,23 @@
+.category-card {
+  text-align: center;
+  cursor: pointer; /* hover effect ke liye pointer */
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: scale(1.05); /* thoda zoom on hover */
+}
+
+.category-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.category-title {
+  margin-top: 0.5rem;
+  font-weight: 1000;
+  cursor: pointer;
+}

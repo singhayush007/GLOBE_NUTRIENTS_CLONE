@@ -1,0 +1,57 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    width: 90%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Arrows */
+.arrow {
+    background-color: white;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    color: black;
+    transition: 0.2s;
+}
+
+.arrow:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/* Each product card occupies 20% (5 visible) */
+.product-card {
+    flex: 0 0 calc(20% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}

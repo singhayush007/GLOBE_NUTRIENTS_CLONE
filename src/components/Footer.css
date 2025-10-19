@@ -1,0 +1,186 @@
+/* Footer Main Container */
+.footer {
+  background-color: #1b1e25;
+  color: #b0b5c1;
+  padding-top: 64px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+/* Footer Grid Container */
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 48px;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 40px;
+}
+
+/* Footer Section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer Title */
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fbbf24;
+}
+
+/* Footer Text */
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links li a {
+  color: #b0b5c1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ffffff;
+}
+
+/* Footer Contact */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+/* Contact Us Links */
+.contact-icon {
+  color: #ffffff;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.contact-link {
+  color: #b0b5c1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column; /* Column layout */
+  align-items: center;    /* Center horizontally */
+  gap: 12px;              /* Gap between icons and copyright */
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center; /* Center icons */
+}
+
+.social-link {
+  background-color: #daa507;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #000000;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  text-align: center;
+}
+
+/* Sticky WhatsApp Button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebd56;
+  transform: scale(1.05);
+}
+
+.whatsapp-icon {
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .whatsapp-button {
+    bottom: 16px;
+    right: 16px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
