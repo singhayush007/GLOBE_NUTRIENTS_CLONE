@@ -2,7 +2,8 @@
 
 This is a **clone of [Globe Nutrients](https://globenutrients.com/)** website built using **React.js**, **HTML**, **Tailwind CSS**, and **JavaScript**. The project demonstrates the frontend development skills and usage of modern React libraries.
 
-![Globe Nutrients Clone Screenshot](assets/screenshot.png)
+![Globe Nutrients Clone Screenshot](src/assets/screenshot.png)
+
 
 ## 💻 Tech Stack
 
